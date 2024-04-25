@@ -5,6 +5,7 @@ export interface IHistory {
 }
 
 export interface IHistoryN1 {
+  [key: string]: IHistoryN1Result | undefined;
   /** 뇌졸증 */
   stroke?: IHistoryN1Result;
   /** 협심증 */

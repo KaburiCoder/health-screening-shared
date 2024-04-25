@@ -7,6 +7,6 @@ export interface IActivity {
 }
 
 export interface IActivityTerm {
-  hours: number;
-  minutes: number;
+  hours?: number;
+  minutes?: number;
 }

@@ -6,7 +6,7 @@
     "build": "npm run clean & tsup",
     "dev": "tsup --watch",
     "clean": "rm -rf dist",
-    "pub": "npm version patch && npm publish"
+    "pub": "git add . && git commit -m \"Updated\" && git push && npm version patch && npm publish"
   },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
