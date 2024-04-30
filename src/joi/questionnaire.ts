@@ -5,8 +5,9 @@ import { HistorySchema } from "./history";
 // import { DrinkSchema } from "./drink";
 // import { ActivitySchema } from "./activity";
 
+const his = HistorySchema;
 export const QuestionnaireSchema = Joi.object<IQuestionnaire>({
-  history: HistorySchema.required(),
+  history: his.required(),
   // smoking: SmokingSchema.required(),
   // drink: DrinkSchema.required(),
   // activity: ActivitySchema.required(),
