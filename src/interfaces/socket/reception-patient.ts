@@ -8,8 +8,7 @@ export interface ReceptionPatient {
   kinds: QuestionnaireKind[];
 }
 
-export interface GetReceptionPatientsResult
-  extends EmitResultBase<ReceptionPatient[]> {}
+export type GetReceptionPatientsResult = EmitResultBase<ReceptionPatient[]>;
 
 export interface GetReceptionPatientsArgs extends EmitArgsBase {}
 
