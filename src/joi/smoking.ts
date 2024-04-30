@@ -1,5 +1,5 @@
 import Joi from "joi";
-import { ISmoking, ISmokingResult, ISmokingTerm } from "../../interfaces";
+import { ISmoking, ISmokingResult, ISmokingTerm } from "../interfaces";
 
 const ISmokingN6d1 = {
   no: 0,

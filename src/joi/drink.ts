@@ -5,7 +5,7 @@ import {
   IDrinkN7,
   IDrinkingKind,
   IDrinkingFrequency,
-} from "../../interfaces";
+} from "../interfaces";
 
 const DrinkingFrequencySchema = Joi.object<IDrinkingFrequency>({
   cup: Joi.number().default(0),
