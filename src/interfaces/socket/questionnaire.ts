@@ -5,4 +5,4 @@ export interface SaveQuestionnaireArgs extends EmitArgsBase, IQuestionnaire {
   eiAuto: number;
 }
 
-export interface SaveQuestionnaireResult extends EmitResultBase<any> {}
+export type SaveQuestionnaireResult = EmitResultBase<any>;

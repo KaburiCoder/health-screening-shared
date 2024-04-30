@@ -1,9 +1,16 @@
-export interface EmitResultBase<T> {
-  status: "success" | "error";
-  data?: T;
-  error?: { [key: string]: string };
+interface EmitErrorResult {
+  status: "error";
+  error: { [key: string]: string };
 }
+
+interface EmitSuccessResult<T> {
+  status: "success";
+  data: T;
+}
+
+export type EmitResultBase<T> = EmitSuccessResult<T> | EmitErrorResult 
 
 export interface EmitArgsBase {
   key: string;
 }
+
