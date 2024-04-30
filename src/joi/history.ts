@@ -40,5 +40,3 @@ export const HistorySchema = Joi.object<IHistory>({
   n2: HistoryN2Schema,
   n3: Joi.valid(...Object.values(EHistoryN3)).required(),
 });
-
-module.exports = { HistorySchema };
