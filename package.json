@@ -47,6 +47,12 @@
       "import": "./dist/interfaces/socket/index.mjs",
       "types": "./dist/interfaces/socket/index.d.ts",
       "default": "./dist/interfaces/socket/index.js"
+    },
+    "./dist/interfaces/socket": {
+      "require": "./dist/interfaces/socket/index.js",
+      "import": "./dist/interfaces/socket/index.mjs",
+      "types": "./dist/interfaces/socket/index.d.ts",
+      "default": "./dist/interfaces/socket/index.js"
     }
   },
   "esModuleInterop": true,
