@@ -1,19 +1,18 @@
 import Joi from "joi";
-import { IActivity, IActivityTerm } from "../interfaces";
 
 // const ActiveTermSchema = Joi.object<IActivityTerm>({
 //   hours: Joi.number().min(1).max(23).required(),
 //   minutes: Joi.number().min(0).max(59).default(0).required(),
 // });
 
-export const ActivitySchema = Joi.object<IActivity>({
+export const ActivitySchema = Joi.object({
   n8_1: Joi.number().min(1).max(7).required(),
-  n8_2: Joi.object<IActivityTerm>({
+  n8_2: Joi.object({
     hours: Joi.number().min(1).max(23).required(),
     minutes: Joi.number().min(0).max(59).default(0).required(),
   }).required(),
   n9_1: Joi.number().min(1).max(7).required(),
-  n9_2: Joi.object<IActivityTerm>({
+  n9_2: Joi.object({
     hours: Joi.number().min(1).max(23).required(),
     minutes: Joi.number().min(0).max(59).default(0).required(),
   }).required(),
