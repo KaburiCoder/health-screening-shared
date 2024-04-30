@@ -5,7 +5,7 @@ interface EmitErrorResult {
 
 interface EmitSuccessResult<T> {
   status: "success";
-  data: T;
+  data?: T;
 }
 
 export type EmitResultBase<T> = EmitSuccessResult<T> | EmitErrorResult 
