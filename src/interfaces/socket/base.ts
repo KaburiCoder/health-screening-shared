@@ -1,6 +1,7 @@
 export interface EmitResultBase<T> {
   status: "success" | "error";
-  data: T;
+  data?: T;
+  error?: { [key: string]: string };
 }
 
 export interface EmitArgsBase {
