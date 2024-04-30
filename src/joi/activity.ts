@@ -1,5 +1,5 @@
 import Joi from "joi";
-import { IActivity, IActivityTerm } from "../interfaces";
+import { IActivity, IActivityTerm } from "../interfaces/index";
 
 export const ActivitySchema = Joi.object<IActivity>({
   n8_1: Joi.number().min(1).max(7).required(),
