@@ -42,13 +42,13 @@
       "types": "./dist/joi/index.d.ts",
       "default": "./dist/joi/index.js"
     },
-    "./interfaces/socket": {
+    "./interfaces.socket": {
       "require": "./dist/interfaces/socket/index.js",
       "import": "./dist/interfaces/socket/index.mjs",
       "types": "./dist/interfaces/socket/index.d.ts",
       "default": "./dist/interfaces/socket/index.js"
     },
-    "./dist/interfaces/socket": {
+    "./dist/interfaces.socket": {
       "require": "./dist/interfaces/socket/index.js",
       "import": "./dist/interfaces/socket/index.mjs",
       "types": "./dist/interfaces/socket/index.d.ts",
