@@ -29,6 +29,12 @@
       "import": "./dist/interfaces/index.mjs",
       "types": "./dist/interfaces/index.d.ts",
       "default": "./dist/interfaces/index.js"
+    },
+    "./joi": {
+      "require": "./dist/joi/index.js",
+      "import": "./dist/joi/index.mjs",
+      "types": "./dist/joi/index.d.ts",
+      "default": "./dist/joi/index.js"
     }
   },
   "esModuleInterop": true,
@@ -40,5 +46,8 @@
     "@types/node": "^20.12.7",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "joi": "^17.13.0"
   }
 }
