@@ -35,6 +35,12 @@
       "import": "./dist/joi/index.mjs",
       "types": "./dist/joi/index.d.ts",
       "default": "./dist/joi/index.js"
+    },
+    "./dist/joi": {
+      "require": "./dist/joi/index.js",
+      "import": "./dist/joi/index.mjs",
+      "types": "./dist/joi/index.d.ts",
+      "default": "./dist/joi/index.js"
     }
   },
   "esModuleInterop": true,
