@@ -1,6 +1,6 @@
 {
   "name": "health-screening-shared",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "scripts": {
     "prepare": "npm run build",
     "build": "npm run clean & tsup",
