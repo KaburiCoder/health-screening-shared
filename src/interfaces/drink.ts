@@ -26,8 +26,8 @@ export interface IDrinkingFrequency {
 }
 
 export enum EDrinkingFreqType {
-  WEEKS = "weeks",
-  MONTHS = "months",
-  YEARS = "years",
-  DO_NOT = "doNot",
+  WEEKS = 1,
+  MONTHS = 2,
+  YEARS = 3,
+  DO_NOT = 4,
 }

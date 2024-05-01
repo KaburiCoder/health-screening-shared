@@ -1,16 +1,11 @@
 import Joi from "joi";
 import {
+  EHistoryN3,
   IHistory,
   IHistoryN1,
   IHistoryN1Result,
   IHistoryN2,
 } from "../interfaces";
-
-const EHistoryN3 = {
-  yes: 1,
-  no: 2,
-  doNotKnown: 3,
-};
 
 const HistoryN1ResultSchema = Joi.object<IHistoryN1Result>({
   diagnosis: Joi.boolean().default(false).description("진단"),

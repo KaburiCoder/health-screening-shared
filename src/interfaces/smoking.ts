@@ -19,9 +19,9 @@ export interface ISmokingTerm {
 }
 
 export enum ISmokingN6d1 {
-  NO = "NO",
-  EVERY_DAY = "EVERY_DAY",
-  MONTH_1_2 = "MONTH_1_2",
-  MONTH_3_9 = "MONTH_3_9",
-  MONTH_10_29 = "MONTH_10_29",
+  NO = 1,
+  MONTH_1_2 = 2,
+  MONTH_3_9 = 3,
+  MONTH_10_29 = 4,
+  EVERY_DAY = 5,
 }

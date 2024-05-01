@@ -1,13 +1,10 @@
 import Joi from "joi";
-import { ISmoking, ISmokingResult, ISmokingTerm } from "../interfaces";
-
-const ISmokingN6d1 = {
-  no: 0,
-  everyDay: 1,
-  month_1_2: 2,
-  month_3_9: 3,
-  month_10_29: 4,
-};
+import {
+  ISmoking,
+  ISmokingN6d1,
+  ISmokingResult,
+  ISmokingTerm,
+} from "../interfaces";
 
 const SmokingTermSchema = Joi.object<ISmokingTerm>({
   totalYears: Joi.number().min(1).max(99).default(0).required(),
