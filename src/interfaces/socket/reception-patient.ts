@@ -3,6 +3,7 @@ import { EmitArgsBase, EmitResultBase } from "./base";
 export interface ReceptionPatient {
   name: string;
   eiAuto: number;
+  ejAuto: number;
   targetName: string;
   birthday: string;
   kinds: QuestionnaireKind[];
