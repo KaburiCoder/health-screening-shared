@@ -8,6 +8,7 @@ export interface ReceptionPatient {
   birthday: string;
   kinds: QuestionnaireKind[];
   diagnose: QuestionnaireDiagnose;
+  status: QuestionnaireStatus;
 }
 
 export type GetReceptionPatientsResult = EmitResultBase<ReceptionPatient[]>;
@@ -26,6 +27,19 @@ export interface QuestionnaireDiagnose {
   smoking: boolean;
   drinking: boolean;
   exercise: boolean;
+}
+
+export interface QuestionnaireStatus {
+  generalQn: boolean;
+  lifestyle: QuestionnaireLifestyle;
+}
+
+export interface QuestionnaireLifestyle {
+  smoking: boolean;
+  drinking: boolean;
+  exercise: boolean;
+  nutrition: boolean;
+  overweight: boolean;
 }
 
 export enum EQuestionnaireKind {
