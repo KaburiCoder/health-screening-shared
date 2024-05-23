@@ -18,6 +18,7 @@ export interface QuestionnaireKind {
   kind: EQuestionnaireKind;
   name: string;
   written: boolean;
+  add: "elderly" | "depression" | "cognitive"[];
   addExam: boolean;
   type: EQuestionnaireType;
   code: string;
