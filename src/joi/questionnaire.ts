@@ -11,6 +11,8 @@ export const QuestionnaireSchema = Joi.object<IQuestionnaire>({
   smoking: SmokingSchema.required(),
   drink: DrinkSchema.required(),
   activity: ActivitySchema.required(),
+  depression: Joi.any(),
+  cognitive: Joi.any(),
   addExam: AddExamSchema.when("isAddExam", {
     is: true,
     then: Joi.required(),
