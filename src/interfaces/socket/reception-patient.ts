@@ -22,6 +22,7 @@ export interface QuestionnaireKind {
   addExam: boolean;
   type: EQuestionnaireType;
   code: string;
+  isReceived: boolean;
 }
 
 export interface QuestionnaireDiagnose {
