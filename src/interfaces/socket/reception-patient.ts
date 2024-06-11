@@ -6,6 +6,7 @@ export interface ReceptionPatient {
   ejAuto: number;
   targetName: string;
   birthday: string;
+  sex: string;
   kinds: QuestionnaireKind[];
   diagnose: QuestionnaireDiagnose;
   status: QuestionnaireStatus;
